@@ -4,16 +4,11 @@ Created on Fri Aug  6 16:32:25 2021
 
 @author: Amar Singh
 """
-
-import json
 import numpy as np
 import pandas as pd
-import re
 import requests
 
 from bs4 import BeautifulSoup
-from scipy import stats
-from statistics import mean
 
 # Import List of Candidate Stocks (S&P 500)
 stocks = pd.read_csv('sp_500_stocks.csv')
@@ -188,4 +183,5 @@ for symbol in stocks['Ticker']:
             ignore_index = True
         )
     
-    
+# Export df to csv file
+df.to_csv('scraped_data.csv', index=False)
