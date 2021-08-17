@@ -63,4 +63,6 @@ for row in df.index:
 
 df.sort_values('Total Score', ascending=False, inplace = True)
 final_df = df[:50]
-final_df
+
+# Export top 50 stocks to .csv file
+final_df.to_csv('top_50_stocks.csv', index=False)
