@@ -44,6 +44,15 @@ The total score is calculated as follows: <br /> <br />
 where: <br /> <br /> 
 *Value<sub>weight</sub> + Growth<sub>weight</sub> = 1*
 
+## Potential Use Cases / Limitations
 
+**Here are a few limitations that must be considered when using this tool:**
+* The 1-year and 3-year metrics that are scraped are from the period ending in June, and thus can trail other scraped data
+* Since percentage increase is used in certain metrics, small numbers can have a disproportionate impact on the score
+* This tool only looks at certain metrics and does not capture the fundamentals of the underlying asset / analyze the strategy or quality of management
+
+**Potential Use Cases:**
+* Portfolio Evaluation
+* Stock Discovery (For example: can be used on Russell 3000 index instead of S&P 500 to determine which stocks to analyze further when dealing with a large number of stocks)
 
 
